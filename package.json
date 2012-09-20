@@ -1,0 +1,9 @@
+{
+    "name": "ycc",
+    "version": "0.0.1",
+    "description": "YUI Config Collector",
+    "main": "./ycc",
+    "dependencies": {
+        "optimist": "~0.3.4"
+    }
+}
