@@ -21,5 +21,47 @@ npm install .
 ./ycc ~/miiicasa/static --ignore 'lib/yui'
 ````
 
+## Sample Output
 
-
+```js
+{
+    "viewer": {
+        "requires": [
+            "event",
+            "event-resize",
+            "io-base",
+            "json-parse",
+            "node",
+            "querystring-stringify",
+            "viewer-app",
+            "widget"
+        ]
+    },
+    "viewer-app": {
+        "requires": [
+            "app",
+            "app-transition",
+            "comment-info-model",
+            "comment-list-model",
+            "env-model",
+            "file-model-list",
+            "panel-view",
+            "space",
+            "substitute",
+            "user-model"
+        ]
+    },
+    "vlc": {
+        "requires": [
+            "base",
+            "node",
+            "substitute"
+        ]
+    },
+    "vlc-plugin": {
+        "requires": [
+            "base"
+        ]
+    }
+}
+```
