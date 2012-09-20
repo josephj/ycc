@@ -18,7 +18,7 @@ npm install .
 ## Usage 
 
 ````shell
-./ycc <Custom YUI module folder> --ignore "jquery,flowplayer" --output "module.json"
+./ycc ~/miiicasa/static --ignore 'lib/yui'
 ````
 
 
