@@ -5,7 +5,7 @@ By doing this, we don't have to maintain a centralized module dependencies confi
 
 ## Installation
 
-````script
+````shell
 git clone git://github.com/josephj/ycc.git
 cd ycc
 git submodule init
