@@ -11,8 +11,9 @@ git clone git://github.com/josephj/ycc.git
 cd ycc
 git submodule init
 git submodule update
-cd node_modules
+cd node_modules/optimist
 npm install .
+cd ../../
 ````
 
 
