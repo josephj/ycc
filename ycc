@@ -1,17 +1,4 @@
 #!/usr/bin/env node
-/**
- * YUI Config Collector
- *
- * The purpose of this script is to collect module settings
- * of customized YUI module files. By doing this, we don't have to maintain
- * a centralized module dependencies config. Instead we can write it in
- * individual modules.
- *
- * Usage:
- * ````
- * ycc <path> --ignore <keyword> --output <output>
- * ````
- */
 /*global YUI,GLOBAL */
 // Make an anonymous function so that I can stop execution anytime.
 (function () {
@@ -29,12 +16,12 @@
 
     // Define command-line options.
     argv = require("optimist")
-           .usage("Collect configuration of each customized YUI modules.\n\n" +
-                  "The purpose of this script is to collect module settings" +
+           .usage("YUI Config Collector\n\n" +
+                  "The purpose of this script is to collect module settings " +
                   "of customized YUI module files.\nBy doing this, we don't " +
                   "have to maintain a centralized module dependencies config.\n\n" +
                   "Usage: ycc <Search Path> --ignore " +
-                  "[Ignore keyword List] --output [Output File]")
+                  "[Ignore keyword list] --output [Output File]")
            .describe("ignore", "You can ignore files by providing keyword list " +
                      "which separate by common")
            .describe("output", "Output the result to a file.")
