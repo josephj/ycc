@@ -124,7 +124,7 @@
         if (output) {
             fs.writeFileSync(output, JSON.stringify(modules, null, 4)); // 4 spaces.
         } else {
-            console.log(modules);
+            console.log(JSON.stringify(modules, null, 4));
         }
     });
 }());
