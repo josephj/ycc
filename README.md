@@ -1,10 +1,11 @@
 
 
-
 ## Installation
 
 ````
 git clone git://github.com/josephj/get-yui-module.git
+git submodule init
+git submodule update
 npm install .
 ````
 
