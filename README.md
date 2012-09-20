@@ -3,6 +3,7 @@
 The purpose of this script is to collect module settings of customized YUI module files.
 By doing this, we don't have to maintain a centralized module dependencies config.
 
+
 ## Installation
 
 ````shell
@@ -65,3 +66,9 @@ npm install .
     }
 }
 ```
+
+## Thanks
+
+Special thanks to @panweizeng and his team members.
+The original idea is coming from their sharing.
+
