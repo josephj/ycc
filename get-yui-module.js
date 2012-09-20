@@ -1,19 +1,23 @@
 #!/usr/bin/env node
 
-// TODO - Integrate https://github.com/substack/node-optimist
-
+// Make an anonymous function so that I can stop execution.
 (function () {
-    var exec = require("child_process").exec,
-        fs = require("fs"),
+
+    var exec   = require("child_process").exec,
+        argv,
+        fs     = require("fs"),
         output = {},
-        path = process.argv[2],
+        path,
         child,
         currentFile;
 
-    if (!path) {
-        console.log("You must provide path (the 1st argument.)");
-        return;
-    }
+    argv = require("optimist")
+        .usage("\nCollect configuration of each customized YUI modules.\n\n" +
+               "Usage: get-yui-module.js --path [Path]")
+        .demand("path")
+        .describe("path", "The path you want to find customized YUI modules.")
+        .describe("output", "The output path.")
+        .argv;
 
     GLOBAL.YUI = function () {};
 
